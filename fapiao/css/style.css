@@ -1,0 +1,23 @@
+*{
+	padding:0px;
+	margin:0px;
+}
+body{
+	
+}
+#big{
+	width:700px;
+	height:400px;
+}
+#part1{
+	background-color:red;
+	width:300px;
+	height:400px;
+	float:left;
+}
+#part2{
+	background-color:yellow;
+	width:300px;
+	height:400px;
+	float:left;
+}

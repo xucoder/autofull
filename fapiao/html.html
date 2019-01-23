@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>
+开发票格式
+</title>
+<link type="text/css" href="css/style.css" rel="stylesheet"/></style>
+<script type="text/javascript" src="js/fapiao.js"></script>
+</head>
+<body>
+<div id="big">
+<div id="part1">
+店铺名：
+<select id="shopname">
+  <option value="qijiandian">天猫autofull傲风旗舰店</option>
+  <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
+  <option value="beijing">傲风北京专卖店</option>
+</select>
+<br>
+订单号：<input id="ordernum" type="text" placeholder="输入订单号" name="ordernum"> <br>
+客户ID：<input id="cusID" type="text" placeholder="输入ID" name="cusID"> <br>
+抬  头：<input id="taitou" type="text" placeholder="输入抬头" name="taitou"> <br>
+税  号：<input id="shuihao" type="text" placeholder="输入税号" name="shuihao"> <br>
+明  细：
+<input type="radio" name="mingxi" value="办公椅" checked="true" /> 办公椅
+<input type="radio" name="mingxi" value="电脑椅" /> 电脑椅
+<input type="radio" name="mingxi" value="套装家具" /> 套装家具
+<br>
+型  号：<input id="xinghao" type="text" placeholder="输入型号" name="xinghao"> <br>
+金  额：<input id="jine" type="text" placeholder="输入金额 例如：899=899x1" name="jine"> <br>
+邮  箱：<input id="youxiang" type="text" placeholder="输入邮箱" name="youxiang"> <br>
+手  机：<input id="shouji" type="text" placeholder="输入手机" name="shouji"> <br><br>
+下发票人：
+<select id="kefuname">
+  <option value="baijiajia">白佳佳</option>
+  <option value="baicao">白曹</option>
+  <option value="baihan">白寒</option>
+</select>
+<br>
+<br>
+<button type="text" onclick="clean()">重置</button>
+<button type="text" onclick="check()">确认</button>
+</div>
+<div id="part2">
+	
+</div>
+</div>
+
+</body>
+</html>
