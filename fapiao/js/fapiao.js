@@ -35,19 +35,16 @@ var t=document.getElementById("kefuname");//获取到select 数组
 var kefuname=t.options[t.selectedIndex].text;   
 //alert(kefuname);  获取到客服姓名
 
-document.getElementById("content").innerHTML="店铺名："+shopname+"<br>"+"\n"+"订单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+"抬头："+taitou
+document.getElementById("content").innerHTML="店铺名："+shopname+"<br>"+"\n"+"订单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+"开发票  普票"+"<br>"+"\n"+"抬头："+taitou
 +"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;	
 }
-function clean(){
-	
-	
-}
+
 //alert("abc\ndef");
 /*function copy(){
 	var text=document.getElementById("content").innerText;
 	var  copyinput=document.getElementById("copyinput");
-	copyinput.value=text;  赋值完成之后 格式就乱了
+	copyinput.value=text;  赋值完成之后 格式就乱了 不能用input 要用textarea
 	copyinput.select();
 	document.execCommand("Copy");
 	alert(111);
@@ -60,7 +57,10 @@ function copy(){
 	copyinput.value=text;  
 	copyinput.select();
 	document.execCommand("Copy");
-	alert("复制成功");
+	var tips=document.getElementById("tips");
+	tips.style.display="inline";
+	setTimeout("tips.style.display='none'",1000);
+
 }
 
 

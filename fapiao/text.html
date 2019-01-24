@@ -10,15 +10,15 @@
 <body>
 <div id="big">
 <div id="part1">
-店铺名：
+店铺：
 <select id="shopname">
-  <option value="qijiandian">天猫autofull傲风旗舰店</option>
+  <option value="qijiandian">天猫autofull傲风旗舰店&nbsp&nbsp&nbsp</option>
   <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
   <option value="beijing">傲风北京专卖店</option>
 </select>
 <br>
-订单号：<input id="ordernum" type="text" placeholder="输入订单号" name="ordernum"> <br>
-客户ID：<input id="cusID" type="text" placeholder="输入ID" name="cusID"> <br>
+单 号：<input id="ordernum" type="text" placeholder="输入订单号" name="ordernum"> <br>
+客 ID：<input id="cusID" type="text" placeholder="输入ID" name="cusID"> <br>
 抬  头：<input id="taitou" type="text" placeholder="输入抬头" name="taitou"> <br>
 税  号：<input id="shuihao" type="text" placeholder="输入税号" name="shuihao"> <br>
 明  细：
@@ -38,12 +38,12 @@
 </select>
 <br>
 <br>
-<button type="text" onclick="clean()">重置</button>
-<button type="text" onclick="check()">确认</button>
+<button type="text" id="check" onclick="check()">确认</button>
 </div>
 <div id="part2">
 	<div id="content" ></div>
 	<textarea id="copyinput" type="text"></textarea>
+	<label id="tips">复制成功</label>
 	<button type="button" id="copy" onclick="copy()">复制</button>
 </div>
 </div>
