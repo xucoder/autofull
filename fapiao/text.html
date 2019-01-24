@@ -10,11 +10,14 @@
 <body>
 <div id="big">
 <div id="part1">
-店铺：
+<label id="pupiao" onclick="ppkind()" >普 票</label>
+<label id="zhuanpiao" onclick="zpkind()">专 票</label><br>
+<!--普票信息-->
+<div id="ppcontent">
+店 铺：
 <select id="shopname">
-  <option value="qijiandian">天猫autofull傲风旗舰店&nbsp&nbsp&nbsp</option>
+  <option value="qijiandian">autofull傲风旗舰店</option>
   <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
-  <option value="beijing">傲风北京专卖店</option>
 </select>
 <br>
 单 号：<input id="ordernum" type="text" placeholder="输入订单号" name="ordernum"> <br>
@@ -31,6 +34,34 @@
 数  量：<input id="shuliang" type="text" placeholder="数量" name="shulinag"> <br>
 邮  箱：<input id="youxiang" type="text" placeholder="输入邮箱" name="youxiang"> <br>
 手  机：<input id="shouji" type="text" placeholder="输入手机" name="shouji"> <br><br>
+</div>
+<!--普票信息结束-->
+<!--专票信息-->
+<div id="zpcontent">
+店 铺：
+<select id="shopname2">
+  <option value="qijiandian">autofull傲风旗舰店</option>
+  <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
+</select>
+<br>
+单 号：<input id="ordernum2" type="text" placeholder="输入订单号" name="ordernum"> <br>
+客 ID：<input id="cusID2" type="text" placeholder="输入ID" name="cusID"> <br>
+抬  头：<input id="taitou2" type="text" placeholder="输入抬头" name="taitou"> <br>
+税  号：<input id="shuihao2" type="text" placeholder="输入税号" name="shuihao"> <br>
+明  细：
+<input type="radio" name="mingxi2" value="办公椅" checked="true" /> 办公椅
+<input type="radio" name="mingxi2" value="电脑椅" /> 电脑椅
+<input type="radio" name="mingxi2" value="套装家具" /> 套装家具
+<br>
+型  号：<input id="xinghao2" type="text" placeholder="输入型号" name="xinghao"> <br>
+总  额：<input id="jine2" type="text" placeholder="总金额" name="jine">&nbsp
+数  量：<input id="shuliang2" type="text" placeholder="数量" name="shulinag"> <br>
+地址及电话：<input id="cpaddress" type="text" placeholder="地址及电话" name="cpaddress"> <br>
+开户行及账号：<input id="account" type="text" placeholder="开户行及账号" name="account"> <br>
+收票地址：<input id="address" type="text" placeholder="收票地址" name="address"> <br>
+</div>
+<br><br>
+<!--专票信息结束-->
 下发票人：
 <select id="kefuname">
   <option value="baijiajia">白佳佳</option>
@@ -43,6 +74,7 @@
 <button type="text" id="check" onclick="check()">确认</button>
 </div>
 <div id="part2">
+	<label id="info">开 票 信 息</label>
 	<div id="content" ></div>
 	<textarea id="copyinput" type="text"></textarea>
 	<label id="tips">复制成功</label>

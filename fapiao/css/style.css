@@ -14,9 +14,10 @@ body{
 	background-color:Pink;
 	width:300px;
 	float:left;
+	margin-right:10px;
 }
 #part2{
-	background-color:YellowGreen;
+	background-color:#FFEBCD;
 	width:300px;
 	float:left;
 }
@@ -26,9 +27,9 @@ body{
 }
 #content{
 	width:300px;
-	height:300px;
-	
+	height:341px;
 	display:block;
+	float:left;
 }
 
 #check{
@@ -51,8 +52,58 @@ body{
 #shuliang{
 	width:48px;
 }
+#jine2{
+	width:55px;
+}
+#shuliang2{
+	width:48px;
+}
+#pupiao{
+	width:149px;
+	float:left;
+	text-align:center;
+	background-color:Tomato;
+	border-right-style:solid;
+	border-color:Lime;
+	border-right-width:1px;
+	
+}
+#pupiao a{
+	
+	text-decoration:none;
+}
+#pupiao:hover{
+	width:149px;
+	cursor:pointer;
+	display:block;
+}
 
-
+#zhuanpiao{
+	width:150px;
+	float:right;
+	text-align:center;
+	background-color:WHiteSmoke;
+}
+#zhuanpiao a{
+	text-decoration:none;
+}
+#zhuanpiao:hover{
+	width:149px;
+	cursor:pointer;
+	display:block;
+}
+#shopname{
+	width:169px;
+}
+#zpcontent{
+	display:none;
+}
+#info{
+	float:left;
+	width:300px;
+	text-align:center;
+	background-color:WHiteSmoke;
+}
 
 
 
