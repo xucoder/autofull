@@ -2,10 +2,17 @@
 var status=1;
 
 function check(){
+var ppinfo="开发票 普票";
+var zpinfo="开发票 专票";
 // 获取普票信息
 var d=document.getElementById("shopname");//获取到select 数组
 var shopname=d.options[d.selectedIndex].text;  //select.selectedIndex 获取当前选中的列表项，然后.text 获取值 
 // alert(shopname); 获取到店铺名称
+if(shopname=="autofull傲风北京专卖店"){
+	ppinfo="开发票 普票 战赢";
+	
+}
+
 var ordernum=document.getElementById("ordernum").value;
 // alert(ordernum);  获取到订单号
 var cusID=document.getElementById("cusID").value;
@@ -40,6 +47,11 @@ var shouji=document.getElementById("shouji").value;
  // 获取专票信息
  var d=document.getElementById("shopname2");//获取到select 数组
 var shopname2=d.options[d.selectedIndex].text;  //select.selectedIndex 获取当前选中的列表项，然后.text 获取值 
+
+if(shopname2=="autofull傲风北京专卖店"){
+	zpinfo="开发票 专票 战赢";
+	
+}
 
 var ordernum2=document.getElementById("ordernum2").value;
 // alert(ordernum2);  获取到订单号
@@ -87,10 +99,11 @@ var kefuname=t.options[t.selectedIndex].text;
 
 
 if(status==1){
-	document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+"开发票  普票"+"<br>"+"\n"+"抬头："+taitou
+	document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
 +"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;	
 }
+
 	//专票信息写入右侧
 if(status==0){
 	
@@ -99,7 +112,7 @@ if(address==""){
 document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
 "客户ID："+cusID2+"<br>"+"\n"+
-"开发票 专票"+"<br>"+
+zpinfo+"<br>"+
 "抬头："+taitou2+"<br>"+"\n"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
@@ -111,7 +124,7 @@ document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 	document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
 "客户ID："+cusID2+"<br>"+"\n"+
-"开发票 专票"+"<br>"+
+zpinfo+"<br>"+
 "抬头："+taitou2+"<br>"+"\n"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
