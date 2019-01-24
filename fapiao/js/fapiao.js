@@ -115,8 +115,8 @@ document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
 "型号："+xinghao2+"<br>"+"\n"+
 "金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
-"地址及电话:"+cpaddress+"<br>"+"\n"+
-"开户行及账号:"+account+"<br>"+"\n"+
+"地址及电话："+cpaddress+"<br>"+"\n"+
+"开户行及账号："+account+"<br>"+"\n"+
 "收票地址："+address;
 
 }
