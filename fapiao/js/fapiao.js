@@ -99,17 +99,19 @@ if(address==""){
 document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
 "客户ID："+cusID2+"<br>"+"\n"+
+"开发票 专票"+"<br>"+
 "抬头："+taitou2+"<br>"+"\n"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
 "型号："+xinghao2+"<br>"+"\n"+
 "金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
-"地址及电话:"+cpaddress+"<br>"+"\n"+
-"开户行及账号:"+account+"<br>"+"\n"
+"地址及电话："+cpaddress+"<br>"+"\n"+
+"开户行及账号："+account+"<br>"+"\n"
 } else{
 	document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
 "客户ID："+cusID2+"<br>"+"\n"+
+"开发票 专票"+"<br>"+
 "抬头："+taitou2+"<br>"+"\n"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
