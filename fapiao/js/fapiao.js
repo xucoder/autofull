@@ -23,20 +23,23 @@ var xinghao=document.getElementById("xinghao").value;
 // alert(xinghao); 获取到型号
 	
 var jine=document.getElementById("jine").value;
-// alert(jine); 获取到jine
+// alert(jine); 获取到金额
+
+var shuliang=document.getElementById("shuliang").value;
+// alert(shuliang); 获取到数量
 
 var youxiang=document.getElementById("youxiang").value;
-// alert(youxiang); 获取到youxiang
+// alert(youxiang); 获取到邮箱
 	
 var shouji=document.getElementById("shouji").value;
- //alert(shouji); 获取到shouji
+ //alert(shouji); 获取到手机
 
 var t=document.getElementById("kefuname");//获取到select 数组
 var kefuname=t.options[t.selectedIndex].text;   
 //alert(kefuname);  获取到客服姓名
 
 document.getElementById("content").innerHTML="店铺名："+shopname+"<br>"+"\n"+"订单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+"开发票  普票"+"<br>"+"\n"+"抬头："+taitou
-+"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;	
 }
 
