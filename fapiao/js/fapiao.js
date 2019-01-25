@@ -44,6 +44,9 @@ var youxiang=document.getElementById("youxiang").value;
 var shouji=document.getElementById("shouji").value;
  //alert(shouji); 获取到手机
  
+ var address=document.getElementById("address").value;
+//获取到收票地址
+ 
  // 获取专票信息
  var d=document.getElementById("shopname2");//获取到select 数组
 var shopname2=d.options[d.selectedIndex].text;  //select.selectedIndex 获取当前选中的列表项，然后.text 获取值 
@@ -84,7 +87,7 @@ var account=document.getElementById("account").value;
 //获取到开户行及账号 
  
 
-var address=document.getElementById("address").value;
+var address2=document.getElementById("address2").value;
 //获取到收票地址
  
  
@@ -99,15 +102,22 @@ var kefuname=t.options[t.selectedIndex].text;
 
 
 if(status==1){
-	document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
+	if(address==""){
+		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
 +"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;	
+	}else{
+		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"收票地址："+address+"<br>"+"\n"+"下发票人："+kefuname;
+	}
+	
 }
 
 	//专票信息写入右侧
 if(status==0){
 	
-if(address==""){
+if(address2==""){
 	
 document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
@@ -132,7 +142,7 @@ zpinfo+"<br>"+
 "金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
 "开户行及账号："+account+"<br>"+"\n"+
-"收票地址："+address;
+"收票地址："+address2;
 
 }
 
