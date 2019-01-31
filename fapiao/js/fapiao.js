@@ -53,7 +53,7 @@ var shouji=document.getElementById("shouji").value;
  var address=document.getElementById("address").value;
 //获取到收票地址
  
-var a=Number(price)+Number(pricecopy);
+var a=Number(price)*Number(shuliang)+Number(pricecopy)*Number(shuliangcopy);
 
 
  // 获取专票信息
@@ -83,11 +83,18 @@ for (var i=0;i<k.length;i++)
 var xinghao2=document.getElementById("xinghao2").value;
 // alert(xinghao2); 获取到型号
 	
-var jine2=document.getElementById("jine2").value;
-// alert(jine2); 获取到金额
+
+var price2=document.getElementById("price2").value;
+// alert(price2); 获取到单价
 
 var shuliang2=document.getElementById("shuliang2").value;
-// alert(shuliang2); 获取到数量 
+// alert(shuliang2); 获取到单价  
+
+var pricecopy2=document.getElementById("pricecopy2").value;
+// alert(pricecopy2); 获取到单价2
+
+var shuliangcopy2=document.getElementById("shuliangcopy2").value;
+// alert(shuliangcopy2); 获取到单价2 
 
 var cpaddress=document.getElementById("cpaddress").value;
 //获取到地址及电话
@@ -99,7 +106,8 @@ var account=document.getElementById("account").value;
 var address2=document.getElementById("address2").value;
 //获取到收票地址
  
- 
+var b=Number(price2)*Number(shuliang2)+Number(pricecopy2)*Number(shuliangcopy2);
+
 
 var t=document.getElementById("kefuname");//获取到select 数组
 var kefuname=t.options[t.selectedIndex].text;   
@@ -128,6 +136,7 @@ if(status==1){
 if(status==0){
 	
 if(address2==""){
+	if(pricecopy2==""){
 	
 document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
@@ -137,7 +146,7 @@ zpinfo+"<br>"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
 "型号："+xinghao2+"<br>"+"\n"+
-"金额："+jine2+"="+parseFloat((jine2/shuliang2).toFixed(2))+"*"+shuliang2+"<br>"+"\n"+
+"金额："+b+"="+price2+"*"+shuliang2+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
 "开户行及账号："+account+"<br>"+"\n"+
 "下发票人："+kefuname+"<br>"+"\n"
@@ -150,7 +159,7 @@ zpinfo+"<br>"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
 "型号："+xinghao2+"<br>"+"\n"+
-"金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
+"金额："+b+"="+price2+"*"+shuliang2+"+"+pricecopy2+"+"+shuliangcopy2+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
 "开户行及账号："+account+"<br>"+"\n"+
 "收票地址："+address2+"<br>"+"\n"+
@@ -159,7 +168,7 @@ zpinfo+"<br>"+
 }
 
 }
-
+}
 
 }
 
@@ -218,7 +227,8 @@ function zpkind(){
 function add(){
 	var aaa=document.getElementById("aaa");
 	aaa.style.display="inline";
-	
+	var ccc=document.getElementById("ccc");
+	ccc.style.display="inline";
 }
 function del(){
 	var aaa=document.getElementById("aaa");
@@ -227,6 +237,13 @@ function del(){
 	pricecopy.value="";
 	var shuliangcopy=document.getElementById("shuliangcopy");
 	shuliangcopy.value="";
+	
+	var ccc=document.getElementById("ccc");
+	ccc.style.display="none";
+	var pricecopy2=document.getElementById("pricecopy2");
+	pricecopy2.value="";
+	var shuliangcopy2=document.getElementById("shuliangcopy2");
+	shuliangcopy2.value="";
 	
 }
 
