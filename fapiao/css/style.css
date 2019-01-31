@@ -50,13 +50,22 @@ body{
 	width:55px;
 }
 #shuliang{
-	width:48px;
+	width:55px;
+}
+#price{
+	width:55px;
 }
 #jine2{
 	width:55px;
 }
 #shuliang2{
 	width:48px;
+}
+#pricecopy{
+	width:50px;
+}
+#shuliangcopy{
+	width:50px;
 }
 #pupiao{
 	width:149px;
@@ -104,6 +113,21 @@ body{
 	text-align:center;
 	background-color:WHiteSmoke;
 }
+#addlist{
+	cursor:pointer;
+	margin-left:15px;
+	font-size:18px;
+}
+#dellist{
+	cursor:pointer;
+	margin-left:15px;
+	font-size:18px;
+}
+#aaa{
+	display:none;
+}
+
+
 
 
 

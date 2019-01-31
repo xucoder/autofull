@@ -31,12 +31,18 @@ for (var i=0;i<m.length;i++)
 
 var xinghao=document.getElementById("xinghao").value;
 // alert(xinghao); 获取到型号
-	
-var jine=document.getElementById("jine").value;
-// alert(jine); 获取到金额
+
+var price=document.getElementById("price").value;
+// alert(price); 获取到总额1
 
 var shuliang=document.getElementById("shuliang").value;
 // alert(shuliang); 获取到数量
+
+var pricecopy=document.getElementById("pricecopy").value;
+// alert(pricecopy); 获取到总额2
+
+var shuliangcopy=document.getElementById("shuliangcopy").value;
+// alert(shuliangcopy); 获取到数量2
 
 var youxiang=document.getElementById("youxiang").value;
 // alert(youxiang); 获取到邮箱
@@ -47,6 +53,9 @@ var shouji=document.getElementById("shouji").value;
  var address=document.getElementById("address").value;
 //获取到收票地址
  
+var a=Number(price)+Number(pricecopy);
+
+
  // 获取专票信息
  var d=document.getElementById("shopname2");//获取到select 数组
 var shopname2=d.options[d.selectedIndex].text;  //select.selectedIndex 获取当前选中的列表项，然后.text 获取值 
@@ -99,21 +108,22 @@ var kefuname=t.options[t.selectedIndex].text;
 
 //普票信息写入右侧
 
-
+// parseFloat((jine/shuliang).toFixed(2))
 
 if(status==1){
 	if(address==""){
+		if(pricecopy==""){
 		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
-+"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+a+"="+price+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;	
 	}else{
 		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
-+"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+jine+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+a+"="+price+"*"+shuliang+"+"+pricecopy+"*"+shuliangcopy+"<br>"+"\n"+"邮箱："+youxiang
 +"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"收票地址："+address+"<br>"+"\n"+"下发票人："+kefuname;
 	}
 	
 }
-
+}
 	//专票信息写入右侧
 if(status==0){
 	
@@ -203,6 +213,21 @@ function zpkind(){
 	
 	status=0;
 	return status;
+}
+// 如果有多个型号，需要输入不同的金额，按加号之后 新增可填写空白内容
+function add(){
+	var aaa=document.getElementById("aaa");
+	aaa.style.display="inline";
+	
+}
+function del(){
+	var aaa=document.getElementById("aaa");
+	aaa.style.display="none";
+	var pricecopy=document.getElementById("pricecopy");
+	pricecopy.value="";
+	var shuliangcopy=document.getElementById("shuliangcopy");
+	shuliangcopy.value="";
+	
 }
 
 
