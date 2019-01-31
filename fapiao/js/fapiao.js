@@ -127,9 +127,10 @@ zpinfo+"<br>"+
 "税号："+shuihao2+"<br>"+"\n"+
 "明细："+mingxi2+"<br>"+"\n"+
 "型号："+xinghao2+"<br>"+"\n"+
-"金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
+"金额："+jine2+"="+parseFloat((jine2/shuliang2).toFixed(2))+"*"+shuliang2+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
-"开户行及账号："+account+"<br>"+"\n"
+"开户行及账号："+account+"<br>"+"\n"+
+"下发票人："+kefuname+"<br>"+"\n"
 } else{
 	document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
 "单号："+ordernum2+"<br>"+"\n"+
@@ -142,7 +143,8 @@ zpinfo+"<br>"+
 "金额："+jine2+"="+parseFloat((jine/shuliang).toFixed(2))+"*"+shuliang+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
 "开户行及账号："+account+"<br>"+"\n"+
-"收票地址："+address2;
+"收票地址："+address2+"<br>"+"\n"+
+"下发票人："+kefuname+"<br>"+"\n"
 
 }
 
