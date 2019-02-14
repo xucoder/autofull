@@ -127,11 +127,22 @@ if(status==1){
 	}else{
 		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
 +"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+a+"="+price+"*"+shuliang+"+"+pricecopy+"*"+shuliangcopy+"<br>"+"\n"+"邮箱："+youxiang
-+"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"收票地址："+address+"<br>"+"\n"+"下发票人："+kefuname;
++"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname;
 	}
 	
+}else{
+	if(pricecopy==""){
+		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+a+"="+price+"*"+shuliang+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname+"<br>"+"\n"+"收货地址："+address;	
+	}else{
+		document.getElementById("content").innerHTML="店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+"客户ID："+cusID+"<br>"+"\n"+ppinfo+"<br>"+"\n"+"抬头："+taitou
++"<br>"+"\n"+"税号："+shuihao+"<br>"+"\n"+"明细："+mingxi+"<br>"+"\n"+"型号："+xinghao+"<br>"+"\n"+"金额："+a+"="+price+"*"+shuliang+"+"+pricecopy+"*"+shuliangcopy+"<br>"+"\n"+"邮箱："+youxiang
++"<br>"+"\n"+"手机："+shouji+"<br>"+"\n"+"下发票人："+kefuname+"<br>"+"\n"+"收货地址："+address;
+	}
 }
 }
+
 	//专票信息写入右侧
 if(status==0){
 	
@@ -162,11 +173,42 @@ zpinfo+"<br>"+
 "金额："+b+"="+price2+"*"+shuliang2+"+"+pricecopy2+"+"+shuliangcopy2+"<br>"+"\n"+
 "地址及电话："+cpaddress+"<br>"+"\n"+
 "开户行及账号："+account+"<br>"+"\n"+
-"收票地址："+address2+"<br>"+"\n"+
 "下发票人："+kefuname+"<br>"+"\n"
 
 }
 
+}else{
+	if(pricecopy2==""){
+	
+document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
+"单号："+ordernum2+"<br>"+"\n"+
+"客户ID："+cusID2+"<br>"+"\n"+
+zpinfo+"<br>"+
+"抬头："+taitou2+"<br>"+"\n"+
+"税号："+shuihao2+"<br>"+"\n"+
+"明细："+mingxi2+"<br>"+"\n"+
+"型号："+xinghao2+"<br>"+"\n"+
+"金额："+b+"="+price2+"*"+shuliang2+"<br>"+"\n"+
+"地址及电话："+cpaddress+"<br>"+"\n"+
+"开户行及账号："+account+"<br>"+"\n"+
+"下发票人："+kefuname+"<br>"+"\n"+
+"收货地址："+address2
+} else{
+	document.getElementById("content").innerHTML="店铺："+shopname2+"<br>"+"\n"+
+"单号："+ordernum2+"<br>"+"\n"+
+"客户ID："+cusID2+"<br>"+"\n"+
+zpinfo+"<br>"+
+"抬头："+taitou2+"<br>"+"\n"+
+"税号："+shuihao2+"<br>"+"\n"+
+"明细："+mingxi2+"<br>"+"\n"+
+"型号："+xinghao2+"<br>"+"\n"+
+"金额："+b+"="+price2+"*"+shuliang2+"+"+pricecopy2+"+"+shuliangcopy2+"<br>"+"\n"+
+"地址及电话："+cpaddress+"<br>"+"\n"+
+"开户行及账号："+account+"<br>"+"\n"+
+"下发票人："+kefuname+"<br>"+"\n"+
+"收货地址："+address2
+}
+	
 }
 }
 
