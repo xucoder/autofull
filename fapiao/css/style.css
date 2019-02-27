@@ -3,7 +3,10 @@
 	margin:0px;
 }
 body{
-	
+
+	background-image:url(../pic/bgpic.png);
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 #big{
 	width:700px;
