@@ -6,71 +6,76 @@
 </title>
 <link type="text/css" href="css/style.css" rel="stylesheet"/></style>
 <script type="text/javascript" src="js/fapiao.js"></script>
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
 <div id="big">
 <div id="part1">
-<label id="pupiao" onclick="ppkind()" >普 票</label>
-<label id="zhuanpiao" onclick="zpkind()">专 票</label><br>
-<!--普票信息-->
-<div id="ppcontent">
+<label id="pupiao"  onclick="ppkind()" >普 票</label>
+<label id="zhuanpiao"  onclick="zpkind()">专 票</label><br>
+<!--普票信息表单-->
+
+<div id="ppcontent" >
 店 铺：
-<select id="shopname">
+<select id="shopname" class="ksty">
   <option value="qijiandian">autofull傲风旗舰店</option>
   <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
   <option value="aofengbeijing">autofull傲风北京专卖店</option>
 </select>
-<br>
-单 号：<input id="ordernum" type="text" placeholder="输入订单号" name="ordernum"> <br>
-客 ID：<input id="cusID" type="text" placeholder="" name="cusID"> <br>
-抬  头：<input id="taitou" type="text" placeholder="" name="taitou"> <br>
-税  号：<input id="shuihao" type="text" placeholder="" name="shuihao"> <br>
+ <br>
+单 号：<input class="ksty" id="ordernum" type="text" placeholder="" name="ordernum"> <br>
+客 ID：<input class="ksty" id="cusID" type="text" placeholder="" name="cusID"> <br>
+抬  头：<input class="ksty" id="taitou" type="text" placeholder="" name="taitou"> <br>
+税  号：<input class="ksty" id="shuihao" type="text" placeholder="" name="shuihao"> <br>
 明  细：
 <input type="radio" name="mingxi" value="办公椅" checked="true" /> 办公椅
 <input type="radio" name="mingxi" value="电脑椅" /> 电脑椅
 <input type="radio" name="mingxi" value="套装家具" /> 套装家具
 <br>
-型  号：<input id="xinghao" type="text" placeholder="" name="xinghao"> <br>
+型  号：<input class="ksty" id="xinghao" type="text" placeholder="" name="xinghao"> <br>
 <span id="bbb">单  价：<input id="price" type="text" placeholder="" name="price" ></span>
 数  量：<input id="shuliang" type="text" value="1" placeholder="" name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp
 
 <span id="aaa">单  价：<input id="pricecopy" type="text" placeholder="" name="pricecopy">
 数  量：<input id="shuliangcopy" type="text" placeholder="" name="shuliangcopy"></span><br>
-邮  箱：<input id="youxiang" type="text" placeholder="" name="youxiang"> <br>
-手  机：<input id="shouji" type="text" placeholder="" name="shouji"> <br>
-收票地址：<input id="address" type="text" placeholder="纸质发票填写" name="address"> <br>
+邮  箱：<input class="ksty" id="youxiang" type="text" placeholder="" name="youxiang"> <br>
+手  机：<input class="ksty" id="shouji" type="text" placeholder="" name="shouji"> <br>
+地  址：<input class="ksty" id="address" type="text" placeholder="纸质发票填写" name="address"><br>
 </div>
 <!--普票信息结束-->
 <!--专票信息-->
 <div id="zpcontent">
+<span class="ksty">
 店 铺：
-<select id="shopname2">
+<select id="shopname2" class="ksty">
   <option value="qijiandian">autofull傲风旗舰店</option>
   <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
   <option value="aofengbeijing">autofull傲风北京专卖店</option>
 </select>
+</span>
 <br>
-单 号：<input id="ordernum2" type="text" placeholder="输入订单号" name="ordernum"> <br>
-客 ID：<input id="cusID2" type="text" placeholder="" name="cusID"> <br>
-抬  头：<input id="taitou2" type="text" placeholder="" name="taitou"> <br>
-税  号：<input id="shuihao2" type="text" placeholder="" name="shuihao"> <br>
+单 号：<input class="ksty" id="ordernum2" type="text" name="ordernum"> <br>
+客 ID：<input class="ksty" id="cusID2" type="text" placeholder="" name="cusID"> <br>
+抬  头：<input class="ksty" id="taitou2" type="text" placeholder="" name="taitou"> <br>
+税  号：<input class="ksty" id="shuihao2" type="text" placeholder="" name="shuihao"> <br>
 明  细：
 <input type="radio" name="mingxi2" value="办公椅" checked="true" /> 办公椅
 <input type="radio" name="mingxi2" value="电脑椅" /> 电脑椅
 <input type="radio" name="mingxi2" value="套装家具" /> 套装家具
 <br>
-型  号：<input id="xinghao2" type="text" placeholder="" name="xinghao2"> <br>
+型  号：<input class="ksty" id="xinghao2" type="text" placeholder="" name="xinghao2"> <br>
 <span id="ddd">单  价：<input id="price2" type="text"  name="price" ></span>
-数  量：<input id="shuliang2" type="text" value="1" placeholder="" name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp
+数  量：<input id="shuliang2" type="text" value="1" placeholder="" name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp&nbsp&nbsp
 
 <span id="ccc">单  价：<input id="pricecopy2" type="text" name="pricecopy">
 数  量：<input id="shuliangcopy2" type="text" placeholder="" name="shuliangcopy"></span><br>
 
-地址及电话：<input id="cpaddress" type="text" placeholder="" name="cpaddress"> <br>
-开户行及账号：<input id="account" type="text" placeholder="" name="account"> <br>
-收票地址：<input id="address2" type="text" placeholder="和订单地址一样可不填" name="address2"> <br>
+地址&电话：<input class="ksty" id="cpaddress" type="text" placeholder="" name="cpaddress"> <br>
+户行&账号：<input class="ksty" id="account" type="text" placeholder="" name="account"> <br>
+收票地址：<input class="ksty" id="address2" type="text" placeholder="纸质发票填写" name="address2"> 
 </div>
-<br><br>
+
 <!--专票信息结束-->
 下发票人：
 <select id="kefuname">
@@ -81,16 +86,14 @@
   <option value="1">白一发</option>
   <option value="1">白柠檬</option>
 </select>
-<br>
-<br>
-<button type="text" id="check" onclick="check()">确认</button>
+<button class="btn btn-info " type="text" id="check" onclick="check()">确认</button>
 </div>
 <div id="part2">
 	<label id="info">开 票 信 息</label>
 	<div id="content" ></div>
 	<textarea id="copyinput" type="text"></textarea>
 	<label id="tips">复制成功</label>
-	<button type="button" id="copy" onclick="copy()">复制</button>
+	<button class="btn btn-info" type="button" id="copy" onclick="copy()">复制</button>
 </div>
 </div>
 

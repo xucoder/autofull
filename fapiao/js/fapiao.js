@@ -243,10 +243,10 @@ function ppkind(){
 	ppcontent.style.display="inline";
 	var zpcontent=document.getElementById("zpcontent");
 	zpcontent.style.display="none";
-	var pupiao=document.getElementById("pupiao");
+	/*var pupiao=document.getElementById("pupiao");
 	pupiao.style.backgroundColor="Tomato";
 	var zhuanpiao=document.getElementById("zhuanpiao");
-	zhuanpiao.style.backgroundColor="WHiteSmoke";
+	zhuanpiao.style.backgroundColor="WHiteSmoke";*/
 	status=1;
 	return status;
 	
@@ -257,11 +257,10 @@ function zpkind(){
 	ppcontent.style.display="none";
 	var zpcontent=document.getElementById("zpcontent");
 	zpcontent.style.display="inline";
-	var zhuanpiao=document.getElementById("zhuanpiao");
+	/*var zhuanpiao=document.getElementById("zhuanpiao");
 	zhuanpiao.style.backgroundColor="Tomato";
 	var pupiao=document.getElementById("pupiao");
-	pupiao.style.backgroundColor="WHiteSmoke";
-	
+	pupiao.style.backgroundColor="WHiteSmoke";*/
 	status=0;
 	return status;
 }

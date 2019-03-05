@@ -4,9 +4,10 @@
 }
 body{
 
-	background-image:url(../pic/bgpic.png);  
+	/*background-image:url(../pic/bgpic.png);  
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;*/
+	
 }
 #big{
 	width:700px;
@@ -16,6 +17,7 @@ body{
 #part1{
 	background-color:Pink;
 	width:300px;
+	
 	float:left;
 	margin-right:10px;
 }
@@ -30,9 +32,12 @@ body{
 }
 #content{
 	width:300px;
-	height:341px;
+	height:380px;
 	display:block;
 	float:left;
+	font-family:微软雅黑;
+	font-size:18px;
+	overflow:auto;
 }
 
 #check{
@@ -54,9 +59,11 @@ body{
 }
 #shuliang{
 	width:55px;
+	text-align:center;
 }
 #shuliang2{
 	width:55px;
+	text-align:center;
 }
 #price{
 	width:55px;
@@ -67,29 +74,36 @@ body{
 #jine2{
 	width:55px;
 }
-#shuliang2{
-	width:48px;
-}
 #pricecopy{
 	width:55px;
+	margin:5px 0px;
 }
 #pricecopy2{
 	width:55px;
+	margin:5px 0px;
 }
 #shuliangcopy{
 	width:55px;
+	text-align:center;
 }
 #shuliangcopy2{
-	width:48px;
+	width:55px;
+	text-align:center;
 }
 #pupiao{
-	width:149px;
+	width:150px;
 	float:left;
+	height:38px;
+	line-height:38px;
 	text-align:center;
-	background-color:Tomato;
-	border-right-style:solid;
+	background-color:MediumSlateBlue;
+	color:white;
+	border-radius:6px;
+	
+	/*border-right-style:solid;
 	border-color:Lime;
-	border-right-width:1px;
+	border-right-width:1px;*/
+	
 	
 }
 #pupiao a{
@@ -97,27 +111,39 @@ body{
 	text-decoration:none;
 }
 #pupiao:hover{
-	width:149px;
+	width:150px;
 	cursor:pointer;
 	display:block;
+	background-color:SlateBlue;
+}
+#pupiao:active{
+	border:2px solid MediumPurple;
 }
 
 #zhuanpiao{
 	width:150px;
+	height:38px;
+	line-height:38px;
 	float:right;
 	text-align:center;
-	background-color:WHiteSmoke;
+	background-color:OrangeRed;
+	color:white;
+	border-radius:6px;
 }
 #zhuanpiao a{
 	text-decoration:none;
 }
 #zhuanpiao:hover{
-	width:149px;
+	width:150px;
 	cursor:pointer;
 	display:block;
+	background-color:Tomato;
+}
+#zhuanpiao:active{
+	border:2px solid Salmon;
 }
 #shopname{
-	width:169px;
+	width:200px;
 }
 #zpcontent{
 	display:none;
@@ -125,8 +151,14 @@ body{
 #info{
 	float:left;
 	width:300px;
+	height:38px;
+	font-size:20px;
 	text-align:center;
-	background-color:WHiteSmoke;
+	line-height:35px;
+	background-color:#7CCD7C;
+	font-family:microsoft yahei;
+	color:white;
+	border-radius:7px;
 }
 #addlist{
 	cursor:pointer;
@@ -144,13 +176,15 @@ body{
 #ccc{
 	display:none;
 }
-
-
-
-
-
-
-
+.ksty{
+	width:200px;
+	font-family:microsoft yahei;
+	font-size:15px;
+	margin:4px 0px;
+}
+input, textarea, select, button {
+	border-radius:3px;
+}
 
 
 
