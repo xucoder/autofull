@@ -190,6 +190,13 @@ input, textarea, select, button {
 .jj{
 	letter-spacing:2.5px;
 }
+.personal-info{
+	width:610px;
+	color:red;
+	float:left;
+	text-align:center;
+	font-weight:bold;
+}
 
 
 
