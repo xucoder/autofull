@@ -181,9 +181,11 @@ body{
 	font-family:microsoft yahei;
 	font-size:15px;
 	margin:4px 0px;
+	box-sizing: border-box;  /*box-sizing  可以解决不同浏览器中 input高度不一致导致整体显示高度不一的兼容性问题*/
 }
 input, textarea, select, button {
 	border-radius:3px;
+	
 }
 .jj{
 	letter-spacing:2.5px;
