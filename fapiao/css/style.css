@@ -185,7 +185,9 @@ body{
 input, textarea, select, button {
 	border-radius:3px;
 }
-
+.jj{
+	letter-spacing:2.5px;
+}
 
 
 
