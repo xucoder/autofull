@@ -286,6 +286,49 @@ function del(){
 	
 }
 
+function pjcheck(){
+	var sp=document.getElementById("pjshopname");//获取到select 数组
+	var spname=sp.options[sp.selectedIndex].text;   // 获取到下拉框的店铺名 alert(spname);
+	
+	var pjordernum=document.getElementById("pjordernum").value;  //获取订单号
+	
+	var pjcusID=document.getElementById("pjcusID").value;  //获取ID
+	
+	var pjtyper=document.getElementById("pjtyper").value;  //获取类型
+	
+	var pjtime=document.getElementById("pjtime").value;  //获取时间
+	
+	var pjinfo=document.getElementById("pjinfo").value;  //获取地址信息
+	
+	var m=document.getElementsByName("leixing")
+		for (var i=0;i<m.length;i++){
+			if(m[i].checked){
+				var mx = m[i].value;  // 获取单选值
+			 //alert (mx);
+	}
+	}
+	
+	//获取到多选框的值
+	var n=document.getElementsByName("peijian");
+	var data=[];
+	for(var k=0;k<n.length;k++){
+		if(n[k].checked){
+		data.push(n[k].value+" ");
+		}
+	}
+	
+	var pjinfo=document.getElementById("pjinfo").value;  //获取联系方式
+	
+	document.getElementById("pjcontent").innerHTML=
+	"店铺："+spname+"<br>"+
+	"订单号："+pjordernum+"<br>"+
+	"客户ID："+pjcusID+"<br>"+
+	"傲风售后"+pjtyper+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"<br>"+
+	pjtime+"<br>"+
+	mx+data+"<br>"+
+	"白君（无）"+"<br>"+
+	pjinfo;
+}
 
 
 

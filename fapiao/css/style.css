@@ -10,8 +10,8 @@ body{
 	
 }
 #big{
-	width:700px;
-	margin:200px auto;
+	width:1300px;
+	margin:200px 200px;
 }
 
 #part1{
@@ -25,6 +25,7 @@ body{
 	background-color:#FFEBCD;
 	width:300px;
 	float:left;
+	margin-right:20px;
 }
 #copyinput{
 	opacity: 0;
@@ -198,7 +199,36 @@ input, textarea, select, button {
 	font-weight:bold;
 }
 
-
+#pj1{
+	width:300px;
+	height:355px;
+	background-color:pink;
+	float:left;
+	border-radius:6px;
+	border-color:none;
+	
+}
+#pj2{
+	width:300px;
+	height:355px;
+	float:left;
+	margin-left:10px;
+	
+}
+#pjcontent{
+	width:300px;
+	height:316px;
+	background-color:#FFEBCD;
+	border-radius:6px;
+}
+#pjcheck{
+	width:300px;
+}
+#pjcopy{
+	position:relative;
+	width:300px;
+	margin-bottom:0px;
+}
 
 
 
