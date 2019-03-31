@@ -329,7 +329,19 @@ function pjcheck(){
 	"白君（无）"+"<br>"+
 	pjinfo;
 }
+// 复制功能
+function pjcopy(){
+	var text=document.getElementById("pjcontent").innerText;
+	//alert(text);
+	var  pjcopyinput=document.getElementById("pjcopyinput");
+	pjcopyinput.value=text;  
+	pjcopyinput.select();
+	document.execCommand("Copy");
+	var pjtips=document.getElementById("pjtips");
+	pjtips.style.display="inline";
+	setTimeout("pjtips.style.display='none'",1000);
 
+}
 
 
 

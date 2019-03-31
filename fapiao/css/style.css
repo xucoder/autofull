@@ -31,6 +31,10 @@ body{
 	opacity: 0;
 	z-index: -10;
 }
+#pjcopyinput{
+	opacity: 0;
+	z-index: -10;
+}
 #content{
 	width:300px;
 	height:380px;
@@ -52,6 +56,10 @@ body{
 	margin-bottom:0px;
 }
 #tips{
+	display:none;
+	color:red;
+}
+#pjtips{
 	display:none;
 	color:red;
 }
@@ -201,7 +209,7 @@ input, textarea, select, button {
 
 #pj1{
 	width:300px;
-	height:355px;
+	height:410px;
 	background-color:pink;
 	float:left;
 	border-radius:6px;
@@ -210,24 +218,25 @@ input, textarea, select, button {
 }
 #pj2{
 	width:300px;
-	height:355px;
+	background-color:#FFEBCD;
 	float:left;
 	margin-left:10px;
 	
 }
 #pjcontent{
 	width:300px;
-	height:316px;
-	background-color:#FFEBCD;
+	height:315px;
+	
 	border-radius:6px;
 }
 #pjcheck{
 	width:300px;
+	margin-top:56px;
 }
 #pjcopy{
 	position:relative;
 	width:300px;
-	margin-bottom:0px;
+	
 }
 
 
