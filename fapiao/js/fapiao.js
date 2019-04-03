@@ -323,7 +323,7 @@ function pjcheck(){
 	"店铺："+spname+"<br>"+
 	"订单号："+pjordernum+"<br>"+
 	"客户ID："+pjcusID+"<br>"+
-	"傲风售后"+pjtyper+"&nbsp&nbsp&nbsp&nbsp&nbsp"+"<br>"+
+	"傲风售后"+pjtyper+"<br>"+
 	pjtime+"<br>"+
 	mx+data+"<br>"+
 	"白君（无）"+"<br>"+
