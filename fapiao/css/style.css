@@ -17,7 +17,7 @@ body{
 #part1{
 	background-color:Pink;
 	width:300px;
-	
+	border-radius:5px;
 	float:left;
 	margin-right:10px;
 }
@@ -37,7 +37,7 @@ body{
 }
 #content{
 	width:300px;
-	height:380px;
+	height:460px;
 	display:block;
 	float:left;
 	font-family:微软雅黑;
@@ -186,6 +186,7 @@ body{
 	display:none;
 }
 .ksty{
+	cursor:text;
 	width:200px;
 	font-family:microsoft yahei;
 	font-size:15px;
@@ -196,6 +197,7 @@ input, textarea, select, button {
 	border-radius:3px;
 	
 }
+
 .jj{
 	letter-spacing:2.5px;
 }

@@ -12,72 +12,44 @@
 <body>
 <div id="big">
 <div id="part1">
-<label id="pupiao"  onclick="ppkind()" >普 票</label>
-<label id="zhuanpiao"  onclick="zpkind()">专 票</label><br>
-<!--普票信息表单-->
 
+<!--普票信息表单-->
+发票类型：&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="fpkind" value="普票" checked="true" /> 普票&nbsp&nbsp&nbsp&nbsp&nbsp
+<input type="radio" name="fpkind" value="专票" /> 专票
 <div id="ppcontent" >
-店 铺：
+店&nbsp&nbsp&nbsp&nbsp&nbsp铺&nbsp：
 <select id="shopname" class="ksty">
   <option value="qijiandian">autofull傲风旗舰店</option>
   <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
   <option value="aofengbeijing">autofull傲风北京专卖店</option>
 </select>
  <br>
-单 号：<input class="ksty" id="ordernum" type="text" placeholder="" name="ordernum"> <br>
-客 ID：<input class="ksty" id="cusID" type="text" placeholder="" name="cusID"> <br>
-抬  头：<input class="ksty" id="taitou" type="text" placeholder="" name="taitou"> <br>
-税  号：<input class="ksty" id="shuihao" type="text" placeholder="" name="shuihao"> <br>
+单&nbsp&nbsp&nbsp&nbsp&nbsp号&nbsp&nbsp：<input class="ksty" id="ordernum" type="text"  name="ordernum"> <br>
+客&nbsp&nbsp&nbsp&nbsp&nbspID&nbsp&nbsp：<input class="ksty" id="cusID" type="text" name="cusID"> <br>
+抬&nbsp&nbsp&nbsp&nbsp&nbsp头&nbsp&nbsp：<input class="ksty" id="taitou" type="text"  name="taitou"> <br>
+税&nbsp&nbsp&nbsp&nbsp&nbsp号&nbsp&nbsp：<input class="ksty" id="shuihao" type="text"  name="shuihao"> <br>
+地&nbsp&nbsp&nbsp&nbsp&nbsp址&nbsp&nbsp：<input class="ksty" id="address" type="text"  name="address" value="*"> <br>
+电&nbsp&nbsp&nbsp&nbsp&nbsp话&nbsp&nbsp：<input class="ksty" id="phone" type="text" name="phone" value="*"> <br>
+开&nbsp&nbsp户&nbsp&nbsp行：<input class="ksty" id="khh" type="text"  name="khh" value="*"> <br>
+开户账号：<input class="ksty" id="khzh" type="text"  name="khzh" value="*"> <br>
 明  细：
 <input type="radio" name="mingxi" value="办公椅" checked="true" /> 办公椅
 <input type="radio" name="mingxi" value="电脑椅" /> 电脑椅
 <input type="radio" name="mingxi" value="套装家具" /> 套装家具
 <br>
-型  号：<input class="ksty" id="xinghao" type="text" placeholder="" name="xinghao"> <br>
-<span id="bbb">单  价：<input id="price" type="text" placeholder="" name="price" ></span>
-数  量：<input id="shuliang" type="text" value="1" placeholder="" name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp
+型&nbsp&nbsp&nbsp&nbsp&nbsp号&nbsp&nbsp：<input class="ksty" id="xinghao" type="text" name="xinghao"> <br>
+<span id="bbb">单  价：<input id="price" type="text"  name="price" ></span>
+数  量：<input id="shuliang" type="text" value="1"  name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp
 
-<span id="aaa">单  价：<input id="pricecopy" type="text" placeholder="" name="pricecopy">
-数  量：<input id="shuliangcopy" type="text" placeholder="" name="shuliangcopy"></span><br>
-邮  箱：<input class="ksty" id="youxiang" type="email" placeholder="" name="youxiang"> <br>
-手  机：<input class="ksty" id="shouji" type="text" placeholder="" name="shouji"> <br>
-地  址：<input class="ksty" id="address" type="text" placeholder="纸质发票填写" name="address"><br>
+<span id="aaa">单  价：<input id="pricecopy" type="text"  name="pricecopy">
+数  量：<input id="shuliangcopy" type="text"  name="shuliangcopy"></span><br>
+
+邮&nbsp&nbsp&nbsp&nbsp箱&nbsp&nbsp：<input class="ksty" id="youxiang" type="email"  name="youxiang" value="*"> <br>
+手&nbsp机&nbsp号：<input class="ksty" id="shouji" type="text"  name="shouji" value="*"> <br>
+
 </div>
 
-<!--普票信息结束-->
-<!--专票信息-->
-<div id="zpcontent">
-<span class="ksty">
-店 铺：
-<select id="shopname2" class="ksty">
-  <option value="qijiandian">autofull傲风旗舰店</option>
-  <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
-  <option value="aofengbeijing">autofull傲风北京专卖店</option>
-</select>
-</span>
-<br>
-单 号：<input class="ksty" id="ordernum2" type="text" name="ordernum"> <br>
-客 ID：<input class="ksty" id="cusID2" type="text" placeholder="" name="cusID"> <br>
-抬  头：<input class="ksty" id="taitou2" type="text" placeholder="" name="taitou"> <br>
-税  号：<input class="ksty" id="shuihao2" type="text" placeholder="" name="shuihao"> <br>
-明  细：
-<input type="radio" name="mingxi2" value="办公椅" checked="true" /> 办公椅
-<input type="radio" name="mingxi2" value="电脑椅" /> 电脑椅
-<input type="radio" name="mingxi2" value="套装家具" /> 套装家具
-<br>
-型  号：<input class="ksty" id="xinghao2" type="text" placeholder="" name="xinghao2"> <br>
-<span id="ddd">单  价：<input id="price2" type="text"  name="price" ></span>
-数  量：<input id="shuliang2" type="text" value="1" placeholder="" name="shulinag"> <span id="addlist" onclick="add()">+</span><span id="dellist" onclick="del()">-</span>&nbsp&nbsp&nbsp&nbsp
-
-<span id="ccc">单  价：<input id="pricecopy2" type="text" name="pricecopy">
-数  量：<input id="shuliangcopy2" type="text" placeholder="" name="shuliangcopy"></span><br>
-
-地址&电话：<input class="ksty" id="cpaddress" type="text" placeholder="" name="cpaddress"> <br>
-户行&账号：<input class="ksty" id="account" type="text" placeholder="" name="account"> <br>
-<span class="jj">收票地址：</span><input class="ksty" id="address2" type="text" placeholder="纸质发票填写" name="address2"> 
-</div>
-
-<!--专票信息结束-->
 下发票人：
 <select id="kefuname" >
   <option value="1">白书墨</option>
