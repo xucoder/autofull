@@ -75,7 +75,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		document.getElementById("content").innerHTML=
 		"店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+
 		"客户ID："+cusID+"<br>"+"\n"+
-		ppinfo+"<br>"+"\n"+
+		"开发票"+"&nbsp&nbsp"+lxz+"<br>"+"\n"+
 		"抬头："+taitou+"<br>"+"\n"+
 		"税号："+shuihao+"<br>"+"\n"+
 		"地址："+address+"<br>"+"\n"+
@@ -92,7 +92,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		document.getElementById("content").innerHTML=
 		"店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+
 		"客户ID："+cusID+"<br>"+"\n"+
-		ppinfo+"<br>"+"\n"+
+		"开发票"+"&nbsp&nbsp"+lxz+"<br>"+"\n"+
 		"抬头："+taitou+"<br>"+"\n"+
 		"税号："+shuihao+"<br>"+"\n"+
 		"地址："+address+"<br>"+"\n"+
