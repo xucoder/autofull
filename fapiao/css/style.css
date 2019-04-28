@@ -20,12 +20,14 @@ body{
 	border-radius:5px;
 	float:left;
 	margin-right:10px;
+	
 }
 #part2{
 	background-color:#FFEBCD;
 	width:300px;
 	float:left;
 	margin-right:20px;
+	border-radius:5px;
 }
 #copyinput{
 	opacity: 0;
@@ -224,12 +226,12 @@ input, textarea, select, button {
 	float:left;
 	margin-left:10px;
 	
+	
 }
 #pjcontent{
 	width:300px;
 	height:315px;
-	
-	border-radius:6px;
+
 }
 #pjcheck{
 	width:300px;
