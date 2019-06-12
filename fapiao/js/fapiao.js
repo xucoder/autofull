@@ -83,7 +83,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		"开户行："+khh+"<br>"+"\n"+
 		"开户账号："+khzh+"<br>"+"\n"+
 		"明细："+m+"<br>"+"\n"+
-		"型号："+xinghao+"<br>"+"\n"+
+		"型号："+xinghao+"*1"+"<br>"+"\n"+
 		"金额："+a+"="+price+"*"+shuliang+"<br>"+"\n"+
 		"邮箱："+youxiang+"<br>"+"\n"+
         "手机："+shouji+"<br>"+"\n"+
@@ -100,7 +100,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		"开户行："+khh+"<br>"+"\n"+
 		"开户账号："+khzh+"<br>"+"\n"+
 		"明细："+m+"<br>"+"\n"+
-		"型号："+xinghao+"<br>"+"\n"+
+		"型号："+xinghao+"*1"+"<br>"+"\n"+
 		"金额："+a+"="+price+"*"+shuliang+"+"+pricecopy+"*"+shuliangcopy+"<br>"+"\n"+
 		"邮箱："+youxiang+"<br>"+"\n"+
         "手机："+shouji+"<br>"+"\n"+
