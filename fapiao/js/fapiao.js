@@ -215,7 +215,13 @@ function pjcopy(){
 
 }
 
+var tm=document.getElementById("tm");
+var myDate = new Date();
 
+var RQ=myDate.toLocaleDateString();
+var SJ=myDate.toLocaleTimeString();
+
+tm.innerHTML="222w";
 
 
 
