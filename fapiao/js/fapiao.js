@@ -65,9 +65,10 @@ var b=Number(pricecopy)*Number(shuliangcopy)+Number(pricecopy)*Number(shuliangco
 
 var t=document.getElementById("kefuname");    //获取到select 数组
 var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到客服姓名   
+var tm =document.getElementById("tm").innerHTML;   //alert(tm)  获取到日期
 
 
-//普票信息写入右侧
+//发票信息写入右侧
 
 // parseFloat((jine/shuliang).toFixed(2))
 
@@ -87,7 +88,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		"金额："+a+"="+price+"*"+shuliang+"<br>"+"\n"+
 		"邮箱："+youxiang+"<br>"+"\n"+
         "手机："+shouji+"<br>"+"\n"+
-		"下发票人："+kefuname;
+		"下发票人："+kefuname+" "+tm;
 	}else{
 		document.getElementById("content").innerHTML=
 		"店铺："+shopname+"<br>"+"\n"+"单号："+ordernum+"<br>"+"\n"+
@@ -104,7 +105,7 @@ var kefuname=t.options[t.selectedIndex].text;    //alert(kefuname);  获取到�
 		"金额："+a+"="+price+"*"+shuliang+"+"+pricecopy+"*"+shuliangcopy+"<br>"+"\n"+
 		"邮箱："+youxiang+"<br>"+"\n"+
         "手机："+shouji+"<br>"+"\n"+
-		"下发票人："+kefuname;
+		"下发票人："+kefuname+" "+tm;
 	}
 	
 }
@@ -214,14 +215,16 @@ function pjcopy(){
 	setTimeout("pjtips.style.display='none'",1000);
 
 }
+//获取年月日	
 
-var tm=document.getElementById("tm");
-var myDate = new Date();
+	var myDate = new Date();
+	var years = myDate.getFullYear();
+	var months = myDate.getMonth()+1;
+	var days = myDate.getDate();
+	var tm=document.getElementById("tm").innerHTML=years+"-"+months+"-"+days;
 
-var RQ=myDate.toLocaleDateString();
-var SJ=myDate.toLocaleTimeString();
 
-tm.innerHTML="222w";
+
 
 
 
