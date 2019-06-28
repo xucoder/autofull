@@ -15,7 +15,7 @@ var d=document.getElementById("shopname");//获取到select 数组
 var shopname=d.options[d.selectedIndex].text;  //select.selectedIndex 获取当前选中的列表项，然后.text 获取值 
 // alert(shopname); 获取到店铺名称
 if(shopname=="autofull傲风北京专卖店"){
-	ppinfo="开发票 普票 战赢";
+	lxz=lxz+" "+"战赢";
 	
 }
 
