@@ -230,6 +230,7 @@ function azcheck(){
 	var aztyper=document.getElementById("aztyper").value;  //获取类型
 	var azordernum=document.getElementById("azordernum").value;  //获取订单号
 	var azinfo=document.getElementById("azinfo").value;  //获取收货信息
+	var arrinfo=document.getElementById("arrinfo").value;  //到货情况
 	var aztime=document.getElementById("aztime").value;  // 时间
 	
 	var m=document.getElementsByName("hexiao")
@@ -238,15 +239,28 @@ function azcheck(){
 				var mx = m[i].value;  // 获取单选值
 	}
 	}
-	
+	if(aztime==""){
+		document.getElementById("azcontent").innerHTML=
+	"店铺："+spname+"<br>"+
+	"客户ID："+azcusID+"<br>"+
+	"型号："+aztyper+"<br>"+
+	"订单号："+azordernum+"<br>"+
+	"收货信息："+azinfo+"<br>"+
+	"到货情况："+arrinfo+"<br>"+
+	"期望上门时间：无"+"<br>"+
+	"是否需要核销："+mx;
+	}else{	
 	document.getElementById("azcontent").innerHTML=
 	"店铺："+spname+"<br>"+
 	"客户ID："+azcusID+"<br>"+
 	"型号："+aztyper+"<br>"+
 	"订单号："+azordernum+"<br>"+
-	"收货信息"+azinfo+"<br>"+
+	"收货信息："+azinfo+"<br>"+
+	"到货情况："+arrinfo+"<br>"+
 	"期望上门时间："+aztime+"<br>"+
 	"是否需要核销："+mx;
+	}
+	
 }
 
 
