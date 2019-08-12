@@ -7,11 +7,30 @@ body{
 	/*background-image:url(../pic/bgpic.png);  
 	background-repeat: no-repeat;
 	background-size: cover;*/
-	
+	width:1920px;
+	background-color:red;
 }
-#big{
-	width:1300px;
-	margin:200px 200px;
+#big1{
+	display:block;
+	width:630px;
+	height:610px;
+	margin:10px 10px;
+	float:left;
+}
+
+#big2{
+	display:block;
+	width:630px;
+	height:610px;
+	margin:10px 0px;
+	float:left;
+}
+#big3{
+	display:block;
+	width:630px;
+	height:610px;
+	margin:10px 0px;
+	float:left;
 }
 
 #part1{
@@ -20,6 +39,7 @@ body{
 	border-radius:5px;
 	float:left;
 	margin-right:10px;
+	
 	
 }
 #part2{
@@ -218,15 +238,14 @@ input, textarea, select, button {
 	float:left;
 	border-radius:6px;
 	border-color:none;
-	
+	margin-top:80px;
 }
 #pj2{
 	width:300px;
 	background-color:#FFEBCD;
 	float:left;
 	margin-left:10px;
-	
-	
+	margin-top:80px;
 }
 #pjcontent{
 	width:300px;
@@ -239,12 +258,48 @@ input, textarea, select, button {
 }
 #pjcopy{
 	position:relative;
-	width:300px;
-	
+	width:300px;	
 }
 
+#az1{
+	width:300px;
+	height:410px;
+	background-color:pink;
+	float:left;
+	border-radius:6px;
+	border-color:none;
+	margin-top:80px;
+}
+#az2{
+	width:300px;
+	background-color:#FFEBCD;
+	float:left;
+	margin-left:10px;
+	margin-top:80px;
+}
+#azcontent{
+	width:300px;
+	height:315px;
 
-
-
-
-
+}
+#azcopyinput{
+	opacity: 0;
+	z-index: -10;
+}
+#aztips{
+	display:none;
+	color:red;
+}
+#azcopy{
+	position:relative;
+	width:300px;	
+}
+#azcheck{
+	width:300px;
+	margin-top:18px;	
+}
+#azinfo{
+	display:block;
+	width:260px;
+	height:80px;
+}

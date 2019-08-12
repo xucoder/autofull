@@ -10,7 +10,9 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-<div id="big">
+
+<!-- 以下为开发票格式-->
+<div id="big1">
 <div id="part1">
 
 <!--普票信息表单-->
@@ -75,8 +77,10 @@
 	<label id="tips">复制成功</label>
 	<button class="btn btn-info" type="button" id="copy" onclick="copy()">复制</button>
 </div>
+</div>
 
 <!-- 以下为售后配件格式-->
+<div id="big2">
 <div id="pj1">
 店 铺：
 <select id="pjshopname" class="ksty">
@@ -113,8 +117,49 @@
 	<label id="pjtips">复制成功</label>
 	<button class="btn btn-info" type="button" id="pjcopy" onclick="pjcopy()">复制</button>
 </div>
-<div class="personal-info">下配件小程序 优先兼容谷歌浏览器 当前版本号@2.0 最终解释权归白子羽所有</div>
+<div class="personal-info">下配件小程序 优先兼容谷歌浏览器 当前版本号@2.0 最终解释权归白子羽所有</div> 
 </div>
+
+
+<!--  以下为鲁班安装格式-->
+<div id="big3">
+<div id="az1">
+店 铺：
+<select id="azshopname" class="ksty">
+  <option value="qijiandian">autofull傲风旗舰店</option>
+  <option value="jingdongqijiandian">京东傲风autofull旗舰店</option>
+  <option value="aofengbeijing">autofull傲风北京专卖店</option>
+</select>
+ <br>
+客 ID：
+<input class="ksty" id="azcusID" type="text"  name="azcusID"> <br>
+型  号：
+<input class="ksty" id="aztyper" type="text"  name="aztyper"> <br>
+单 	号：
+<input class="ksty" id="azordernum" type="text"  name="azordernum"> <br>
+收货信息:
+<textarea class="ksty" id="azinfo"  name="azinfo" height="30"></textarea> <br>
+期望上门时间：<input class="ksty" id="aztime" type="datetime-local"  name="aztime"> <br>
+是否需要核销：
+<input type="radio" name="hexiao" value="是" checked="true" /> 是
+<input type="radio" name="hexiao" value="否" /> 否
+<button class="btn btn-info"  type="text" id="azcheck" onclick="azcheck()">确认</button>
+
+</div>
+<div id="az2">
+<label id="info">安 装 信 息</label>
+	<div id="azcontent" ></div>
+	<textarea id="azcopyinput" type="text"></textarea>
+	<label id="aztips">复制成功</label>
+	<button class="btn btn-info" type="button" id="azcopy" onclick="azcopy()">复制</button>
+</div>
+</div>
+
+
+
+
+
+
 <script type="text/javascript" src="js/fapiao.js"></script>
 </body>
 

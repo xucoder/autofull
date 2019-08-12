@@ -223,7 +223,46 @@ function pjcopy(){
 	var days = myDate.getDate();
 	var tm=document.getElementById("tm").innerHTML=years+"-"+months+"-"+days;
 
+function azcheck(){
+	var sp=document.getElementById("azshopname");//获取到select 数组
+	var spname=sp.options[sp.selectedIndex].text;
+	var azcusID=document.getElementById("azcusID").value;  //获取ID
+	var aztyper=document.getElementById("aztyper").value;  //获取类型
+	var azordernum=document.getElementById("azordernum").value;  //获取订单号
+	var azinfo=document.getElementById("azinfo").value;  //获取收货信息
+	var aztime=document.getElementById("aztime").value;  // 时间
+	
+	var m=document.getElementsByName("hexiao")
+		for (var i=0;i<m.length;i++){
+			if(m[i].checked){
+				var mx = m[i].value;  // 获取单选值
+	}
+	}
+	
+	document.getElementById("azcontent").innerHTML=
+	"店铺："+spname+"<br>"+
+	"客户ID："+azcusID+"<br>"+
+	"型号："+aztyper+"<br>"+
+	"订单号："+azordernum+"<br>"+
+	"收货信息"+azinfo+"<br>"+
+	"期望上门时间："+aztime+"<br>"+
+	"是否需要核销："+mx;
+}
 
+
+
+function azcopy(){
+	var text=document.getElementById("azcontent").innerText;
+	//alert(text);
+	var  azcopyinput=document.getElementById("azcopyinput");
+	azcopyinput.value=text;  
+	azcopyinput.select();
+	document.execCommand("Copy");
+	var aztips=document.getElementById("aztips");
+	aztips.style.display="inline";
+	setTimeout("aztips.style.display='none'",1000);
+
+}
 
 
 
