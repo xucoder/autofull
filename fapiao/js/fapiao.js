@@ -230,7 +230,15 @@ function azcheck(){
 	var aztyper=document.getElementById("aztyper").value;  //获取类型
 	var azordernum=document.getElementById("azordernum").value;  //获取订单号
 	var azinfo=document.getElementById("azinfo").value;  //获取收货信息
-	var arrinfo=document.getElementById("arrinfo").value;  //到货情况
+	//var arrinfo=document.getElementById("arrinfo").value;  //到货情况
+	//获取到货情况单选值
+	var arrinfo1=document.getElementsByName("arrinfo1");
+      for (var i=0;i<arrinfo1.length;i++)
+		if(arrinfo1[i].checked){
+	// alert (arrinfo1[i].value);
+			var arr = arrinfo1[i].value;         // m值就是选中的单选按钮 明细的值
+	}
+	
 	var aztime=document.getElementById("aztime").value;  // 时间
 	
 	var m=document.getElementsByName("hexiao")
@@ -246,7 +254,7 @@ function azcheck(){
 	"型号："+aztyper+"<br>"+
 	"订单号："+azordernum+"<br>"+
 	"收货信息："+azinfo+"<br>"+
-	"到货情况："+arrinfo+"<br>"+
+	"到货情况："+arr+"<br>"+
 	"期望上门时间：无"+"<br>"+
 	"是否需要核销："+mx;
 	}else{	
@@ -256,7 +264,7 @@ function azcheck(){
 	"型号："+aztyper+"<br>"+
 	"订单号："+azordernum+"<br>"+
 	"收货信息："+azinfo+"<br>"+
-	"到货情况："+arrinfo+"<br>"+
+	"到货情况："+arr+"<br>"+
 	"期望上门时间："+aztime+"<br>"+
 	"是否需要核销："+mx;
 	}
