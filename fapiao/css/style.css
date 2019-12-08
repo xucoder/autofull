@@ -303,3 +303,8 @@ input, textarea, select, button {
 	width:260px;
 	height:80px;
 }
+
+laydate.render({
+  elem: '#aztime'
+  ,type: 'datetime'
+});

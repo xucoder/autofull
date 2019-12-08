@@ -285,7 +285,10 @@ function azcopy(){
 	setTimeout("aztips.style.display='none'",1000);
 
 }
-
+laydate.render({
+  elem: '#aztime'
+  ,type: 'datetime'
+});
 
 
 

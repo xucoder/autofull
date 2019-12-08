@@ -10,7 +10,7 @@
 <script src="https://cdn.bootcss.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-
+<script type="text/javascript" src="plug/layDate-v5.0.9/laydate/laydate.js"></script>
 <!-- 以下为开发票格式-->
 <div id="big1">
 <div id="part1">
@@ -144,7 +144,8 @@
 <input type="radio" name="arrinfo1" value="运输中" checked="true" /> 运输中
 <input type="radio" name="arrinfo1" value="派件中" /> 派件中
 <input type="radio" name="arrinfo1" value="已收货" /> 已收货 
-期望上门时间：<input class="ksty" id="aztime" type="datetime-local"  name="aztime"> <br>
+<!--期望上门时间：<input class="ksty" id="aztime" type="datetime-local"  name="aztime"> <br>-->
+期望上门时间：<input class="ksty" id="aztime" type="text"  name="aztime"> <br>
 是否需要核销：
 <input type="radio" name="hexiao" value="是" checked="true" /> 是
 <input type="radio" name="hexiao" value="否" /> 否 
