@@ -238,14 +238,14 @@ input, textarea, select, button {
 	float:left;
 	border-radius:6px;
 	border-color:none;
-	margin-top:80px;
+	margin-top:11px;
 }
 #pj2{
 	width:300px;
 	background-color:#FFEBCD;
 	float:left;
 	margin-left:10px;
-	margin-top:80px;
+	margin-top:12px;
 }
 #pjcontent{
 	width:300px;
@@ -304,7 +304,3 @@ input, textarea, select, button {
 	height:80px;
 }
 
-laydate.render({
-  elem: '#aztime'
-  ,type: 'datetime'
-});
