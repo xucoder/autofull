@@ -238,7 +238,7 @@ input, textarea, select, button {
 	float:left;
 	border-radius:6px;
 	border-color:none;
-	margin-top:11px;
+	margin-top:10px;
 }
 #pj2{
 	width:300px;
@@ -268,14 +268,14 @@ input, textarea, select, button {
 	float:left;
 	border-radius:6px;
 	border-color:none;
-	margin-top:80px;
+	margin-top:40px;
 }
 #az2{
 	width:300px;
 	background-color:#FFEBCD;
 	float:left;
 	margin-left:10px;
-	margin-top:80px;
+	margin-top:40px;
 }
 #azcontent{
 	width:300px;
@@ -296,11 +296,20 @@ input, textarea, select, button {
 }
 #azcheck{
 	width:300px;
-	margin-top:18px;	
+	margin-top:20px;	
 }
 #azinfo{
 	display:block;
 	width:260px;
 	height:80px;
+}
+#sen{ 
+	display:block;
+	text-align:left;
+	font-size:20px;
+	width:600px;
+	line-height:40px;
+	color:red;
+	font-weight:bold;
 }
 
