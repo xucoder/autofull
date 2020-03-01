@@ -199,7 +199,7 @@ function pjcheck(){
 	"傲风赠品"+pjtyper+"<br>"+
 	pjtime.replace(/-/g,"/")+"<br>"+
 	mx+data+"<br>"+
-	"白星（无）"+"<br>"+
+	"白君（无）"+"<br>"+
 	pjinfo;
 }
 // 复制功能
