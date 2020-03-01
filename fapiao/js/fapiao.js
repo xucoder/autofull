@@ -196,10 +196,10 @@ function pjcheck(){
 	"店铺："+spname+"<br>"+
 	"订单号："+pjordernum+"<br>"+
 	"客户ID："+pjcusID+"<br>"+
-	"傲风售后"+pjtyper+"<br>"+
-	pjtime+"<br>"+
+	"傲风赠品"+pjtyper+"<br>"+
+	pjtime.replace(/-/g,"/")+"<br>"+
 	mx+data+"<br>"+
-	"白君（无）"+"<br>"+
+	"白星（无）"+"<br>"+
 	pjinfo;
 }
 // 复制功能
