@@ -162,16 +162,13 @@ function del(){
 function pjcheck(){
 	var sp=document.getElementById("pjshopname");//获取到select 数组
 	var spname=sp.options[sp.selectedIndex].text;   // 获取到下拉框的店铺名 alert(spname);
-	
+
 	var pjordernum=document.getElementById("pjordernum").value;  //获取订单号
 	
 	var pjcusID=document.getElementById("pjcusID").value;  //获取ID
 	
 	var pjtyper=document.getElementById("pjtyper").value;  //获取类型
 	
-	var pjtime=document.getElementById("pjtime").value;  //获取时间
-	
-	var pjinfo=document.getElementById("pjinfo").value;  //获取地址信息
 	
 	var m=document.getElementsByName("leixing")
 		for (var i=0;i<m.length;i++){
@@ -190,17 +187,11 @@ function pjcheck(){
 		}
 	}
 	
-	var pjinfo=document.getElementById("pjinfo").value;  //获取联系方式
-	
 	document.getElementById("pjcontent").innerHTML=
 	"店铺："+spname+"<br>"+
 	"订单号："+pjordernum+"<br>"+
 	"客户ID："+pjcusID+"<br>"+
-	"傲风赠品"+pjtyper+"<br>"+
-	pjtime.replace(/-/g,"/")+"<br>"+
-	mx+data+"<br>"+
-	"白君（无）"+"<br>"+
-	pjinfo;
+	"&"+pjtyper+"&"+mx+data+"&";
 }
 // 复制功能
 function pjcopy(){
