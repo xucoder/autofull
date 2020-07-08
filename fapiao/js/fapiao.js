@@ -169,6 +169,8 @@ function pjcheck(){
 	
 	var pjtyper=document.getElementById("pjtyper").value;  //获取类型
 	
+	var ordertime=document.getElementById("ordertime").value;  //获取订单时间
+	
 	
 	var m=document.getElementsByName("leixing")
 		for (var i=0;i<m.length;i++){
@@ -183,7 +185,7 @@ function pjcheck(){
 	var data=[];
 	for(var k=0;k<n.length;k++){
 		if(n[k].checked){
-		data.push(n[k].value+" ");
+		data.push(n[k].value+"");
 		}
 	}
 	
@@ -191,7 +193,7 @@ function pjcheck(){
 	"店铺："+spname+"<br>"+
 	"订单号："+pjordernum+"<br>"+
 	"客户ID："+pjcusID+"<br>"+
-	"&"+pjtyper+"&"+mx+data+"&";
+	"&"+ordertime+"&"+pjtyper+"&"+mx+data+"&";
 }
 // 复制功能
 function pjcopy(){
